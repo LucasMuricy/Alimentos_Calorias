@@ -9,7 +9,7 @@ public class FoodRepository {
 
     private List<FoodEntity> mListFood;
 
-    public FoodRepository(){
+    public FoodRepository() {
         this.mListFood = new ArrayList<>();
 
         // Adiciona items
@@ -29,14 +29,12 @@ public class FoodRepository {
         this.mListFood.add(new FoodEntity(13, "Whiskey", 58));
     }
 
-    //public FoodEntity get(int id){
-        //this.mListFood.get()}
+    public FoodEntity get(int id) {
+        return this.mListFood.get(id);
+    }
 
 
-
-
-
-    public List<FoodEntity> getList(){
+    public List<FoodEntity> getList() {
         return this.mListFood;
     }
 
